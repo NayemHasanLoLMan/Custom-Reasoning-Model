@@ -131,6 +131,7 @@ celerybeat.pid
 .env
 .venv
 env/
+.env/
 venv/
 ENV/
 env.bak/
@@ -174,11 +175,21 @@ cython_debug/
 .pypirc
 
 
-# Ignore PyTorch/Transformers large binaries
+# PyTorch & model files
 *.pt
 *.pth
-*.bin
 *.safetensors
+*.bin
+*.dll
+*.lib
+
+# Checkpoints
+checkpoints/
+
+# Cache and build files
+__pycache__/
+*.pyc
+.cache/
 
 # Ignore Hugging Face cache
 ~/.cache/
