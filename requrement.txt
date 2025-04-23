@@ -1,0 +1,4 @@
+torch==2.2.1       # or latest version with CPU support
+transformers==4.39.1
+fastapi==0.110.0
+uvicorn==0.29.0
